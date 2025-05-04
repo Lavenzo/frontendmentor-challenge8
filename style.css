@@ -1,0 +1,99 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: hsl(210, 46%, 95%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.card {
+  display: flex;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 700px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-image {
+  width: 40%;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+  width: 60%;
+  position: relative;
+}
+
+.card-content p {
+  color: hsl(214, 17%, 51%);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.author img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.name {
+  font-weight: bold;
+  margin: 0;
+}
+
+.date {
+  font-size: 0.8rem;
+  color: hsl(212, 23%, 69%);
+  margin: 0;
+}
+
+.share-wrapper {
+  position: relative;
+}
+
+.share-btn {
+  background-color: hsl(210, 46%, 95%);
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.share-tooltip {
+  position: absolute;
+  top: -50px;
+  right: 0;
+  background-color: hsl(217, 19%, 35%);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.share-tooltip img {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
